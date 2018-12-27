@@ -1,0 +1,72 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: #000;
+	overflow: hidden;
+	
+}
+p
+{
+	font-size: 20px;
+	line-height: 15px;
+	text-align: justify;
+	animation-name: animate-bg;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+
+}
+
+@keyframes animate-bg {
+0%
+{
+
+		background: url(34199745_1006673819496505_1025906827604262912_n.jpg);
+			background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:rgba(255,255,255,0);
+}
+25%
+{
+
+		background: url(39442190_1088408017989751_702866424418271232_n.jpg);
+			background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:rgba(255,255,255,0);
+
+}
+75%
+{
+
+		background: url(45257888_1142080572622495_8152007923929710592_o.jpg);
+			background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:rgba(255,255,255,0);
+
+
+
+}
+
+100%
+{
+
+		background: url(33413481_1001249356705618_7966588606598873088_o.jpg);
+			background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color:rgba(255,255,255,0);
+
+
+
+}
+
+
+}

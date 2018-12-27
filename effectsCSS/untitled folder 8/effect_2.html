@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+.flannel-effect {
+  widows: 100%;
+  height: 100vh;
+  background-image: url(photo.jpg);
+  background-size: cover;
+  background-position: center;
+  animation-name: flannel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  background-image: url(photo.jpg), url(photo.jpg), url(photo.jpg);
+    background-position: center;
+    background-size: 100%, 100000% 100%, 100% 100000%;
+    background-blend-mode: overlay;
+}
+
+
+@keyframes flannel
+{
+  0%
+  {
+    background-image: url(photo.jpg), ;
+    background-size: 100%;
+     /*filter: brightness(0);*/
+     background-position: 0%;
+  }
+  50%
+  {
+    background-image: url(photo.jpg), url(photo.jpg);
+    background-size: 100%, 100000% 100%;    
+  }
+  100%
+  {
+    background-image: url(photo.jpg), url(photo.jpg), url(photo.jpg);
+    background-size: 100%, 100000% 100%, 100% 100000%;
+     /*filter: brightness(3);*/
+     background-position: 0%, 100%, 0; 
+  }
+}
+	</style>
+
+</head>
+<body>
+<div class="flannel-effect"></div>
+</body>
+</html>

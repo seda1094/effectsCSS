@@ -1,0 +1,51 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+		background: url(36064321_1022894137874473_7779836973232947200_n.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	background-attachment: fixed;
+}
+.portrait
+{
+	position: relative;
+}
+.portrait span
+{
+	display: block;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: #000;
+	float: left;
+	animation-name: animImage;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	/*background: url(34199745_1006673819496505_1025906827604262912_n.jpg);*/
+
+	/*border: 1px solid*/
+}
+
+@keyframes animImage {
+0%
+{
+		background: url(40895919_1103046933192526_217580981631057920_o.jpg);
+			background-size: cover;
+	background-attachment: fixed;
+	filter: blur(1px);
+}
+
+100%
+{
+		background: url(34199745_1006673819496505_1025906827604262912_n.jpg);
+			background-size: cover;
+	background-attachment: fixed;
+	filter: blur(1px);
+}
+}

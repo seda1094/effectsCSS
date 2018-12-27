@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body
+		{
+			margin: 0;
+			padding: 0;
+		}
+		section
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: url(https://scontent.fevn5-1.fna.fbcdn.net/v/t31.0-8/29663108_965380540292500_6217588888220835219_o.jpg?_nc_cat=101&_nc_ht=scontent.fevn5-1.fna&oh=6dc980f984630341cd171ee35874a164&oe=5C67C312);
+			background-repeat: no-repeat;
+			background-size: cover;
+			animation: colorWhite;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		section:before
+		{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background:repeating-linear-gradient(#000 0%, #000 50%, #fff 50%, #fff 100%);
+			background-size: 10px 10px;
+			mix-blend-mode: multiply;
+			animation: bSaze;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+
+		@keyframes bSaze
+		{
+			0%
+			{
+			background-size: 4px 4px;
+			}
+			50%
+			{
+				background-size: 15px 15px;
+			}
+			100%
+			{
+				background-size: 4px 4px;
+			}
+		}
+
+				@keyframes colorWhite
+		{
+			0%
+			{
+				filter:  contrast(4);
+			}
+			50%
+			{
+				filter: contrast(2) grayscale(1);
+
+			}
+			100%
+			{
+				filter: contrast(4) ;
+
+			}
+		}
+	</style>
+</head>
+<body>
+	<section></section>
+</body>
+</html>
